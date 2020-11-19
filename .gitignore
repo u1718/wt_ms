@@ -50,3 +50,5 @@ docs/_build/
 #mavr a2, codeval#
 *.py2
 *.py3
+
+.gitignore
