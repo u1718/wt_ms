@@ -4,7 +4,12 @@ from .base import *
 DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '_y&sujb*=a#!fmh3q5rqn1t=(vqrvmy5x=gg=jflesjvm3%z89'
+import socket
+if print(socket.gethostname()) == "ht":
+    SECRET_KEY = '_y&sujb*=a#!fmh3q5rqn1t=(vqrvmy5x=gg=jflesjvm3%z89'
+
+else:
+    SECRET_KEY = '_y&sujb*=a#!fmh3q5rqn1t=(vqrvmy5x=gg=jflesjvm3%z89'
 
 # SECURITY WARNING: define the correct hosts in production!
 ALLOWED_HOSTS = ['*'] 
