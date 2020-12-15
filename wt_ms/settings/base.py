@@ -89,13 +89,19 @@ WSGI_APPLICATION = 'wt_ms.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'mysql': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'WT_MS',
         'USER': 'th',
         'PASSWORD': '1',
         'HOST': '',
         'PORT': '',
+    },
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'read_default_file': '/home/th/my.cnf',
+        },
     },
     'sqlite3': {
         'ENGINE': 'django.db.backends.sqlite3',
