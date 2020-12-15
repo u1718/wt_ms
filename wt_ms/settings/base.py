@@ -90,6 +90,14 @@ WSGI_APPLICATION = 'wt_ms.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'WT_MS',
+        'USER': 'th',
+        'PASSWORD': '1',
+        'HOST': '',
+        'PORT': '',
+    },
+    'sqlite3': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
